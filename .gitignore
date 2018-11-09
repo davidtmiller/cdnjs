@@ -11,6 +11,25 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/foundation/undefined/
+ajax/libs/messenger/.1.5.0/
+ajax/libs/wavesurfer.js/marky-boy_2006-01-11/
+ajax/libs/require-i18n/latest/
+ajax/libs/agility/0.1.0-docs/
+ajax/libs/jquery-countdown/Release_1*
+ajax/libs/postgrest-client/1.0.*
+ajax/libs/jquery-ui-timepicker-addon/0.0.0-ignored/
+ajax/libs/jsrender/*/jsrender-node.js
+ajax/libs/typescript/*/typescriptServices.js
+ajax/libs/froala-editor/froala_editor_1.0.3/
+ajax/libs/froala-editor/.1.0.5/
+ajax/libs/min/1.5
+ajax/libs/typescript/*dev*
+ajax/libs/material-design-icons/*/gulpfile.babel.js
+ajax/libs/jquery.alphanum/Stable_1.0
+ajax/libs/jquery.alphanum/Stable_1.1
+ajax/libs/fullPage.js/.2.7.5
+ajax/libs/Turf.js/0.0.4[3-6]
 ajax/libs/metrics-graphics/.7.0
 ajax/libs/PhysicsJS/physicsjs-*
 ajax/libs/diva.js/RELEASE-*/
@@ -72,6 +91,7 @@ ajax/libs/jsxgraph/skm*
 ajax/libs/jsxgraph/sketchometry*
 ajax/libs/mojio-js/robb/
 ajax/libs/lodash.js/*-es
+ajax/libs/lodash.js/*-npm
 ajax/libs/flexslider/ersion
 ajax/libs/bean/1.0.0a1/
 ajax/libs/codemirror/3.11.01/
@@ -90,6 +110,7 @@ ajax/libs/require-css/dev-test/
 ajax/libs/require-css/release-test/
 ajax/libs/ionic/testing
 ajax/libs/yamlcss/rm
+ajax/libs/nuclear-js/show
 ajax/libs/aws-sdk/*/appinfo.sample.js
 ajax/libs/winjs/release
 ajax/libs/plottable.js/.0.18.0
@@ -99,6 +120,14 @@ ajax/libs/material-design-icons/2.0
 ajax/libs/randomcolor/0.2
 ajax/libs/core-js/1,0,1/
 ajax/libs/musicmetadata/Browser-0.4.3/
+ajax/libs/ng-pdfviewer/r0.1.0/
+ajax/libs/ng-pdfviewer/r0.2.0/
+ajax/libs/ng-pdfviewer/r0.2.1/
+ajax/libs/prettyCheckable/.2.1.1/
+
+#ignore files that we don't need
+ajax/libs/*/*/**/Gruntfile.js
+ajax/libs/*/*/**/.gitignore
 
 #ignore files that we don't support
 ajax/libs/*/*/**/*.styl

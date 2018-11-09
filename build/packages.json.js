@@ -88,6 +88,10 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
   glob("ajax/libs/*/package.json", function (error, matches) {
     async.each(matches, function(item, callback) {
       var package = JSON.parse(fs.readFileSync(item, 'utf8'));
+      if (package.version === undefined) {
+          console.log("Package " + package.name + " doesn't have a valid version, ignore it!");
+          return;
+      }
       delete package.main;
       delete package.scripts;
       delete package.bugs;

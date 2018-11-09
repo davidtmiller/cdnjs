@@ -1,6 +1,6 @@
 {
   "name": "loaders.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "filename": "loaders.min.css",
   "description": "Loading animations in pure css",
   "repository": {

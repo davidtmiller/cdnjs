@@ -6,7 +6,7 @@
   "homepage": "http://door3.github.io/angular-css",
   "repository": {
     "type": "git",
-    "url": "git://github.com/door3/angular-css"
+    "url": "git://github.com/castillo-io/angular-css"
   },
   "npmName": "angular-css",
   "npmFileMap": [

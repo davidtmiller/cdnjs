@@ -3,17 +3,12 @@
   "filename": "accounting.min.js",
   "version": "0.4.1",
   "description": "A lightweight JavaScript library for number, money and currency formatting .",
-  "homepage": "http://josscrowcroft.github.io/accounting.js/",
+  "homepage": "https://openexchangerates.github.io/accounting.js/",
   "keywords": [
     "accounting",
     "number",
     "money",
     "currency"
-  ],
-  "maintainers": [
-    {
-      "name": "josscrowcroft"
-    }
   ],
   "npmName": "accounting",
   "npmFileMap": [
@@ -27,6 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/josscrowcroft/accounting.js"
-  }
+    "url": "https://github.com/openexchangerates/accounting.js"
+  },
+  "license": "MIT"
 }

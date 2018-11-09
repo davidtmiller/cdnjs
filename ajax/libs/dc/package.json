@@ -33,6 +33,7 @@
       "basePath": "/",
       "files": [
         "dc.css",
+        "dc.min.css",
         "dc.min.js",
         "dc.min.js.map",
         "dc.js",

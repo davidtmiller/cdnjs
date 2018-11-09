@@ -1,0 +1,48 @@
+{
+  "name": "syn",
+  "version": "0.2.0",
+  "filename": "cjs/syn.min.js",
+  "author": {
+    "name": "Bitovi",
+    "email": "contact@bitovi.com",
+    "web": "http://bitovi.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bitovi/syn.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "simulate",
+    "synthetic events",
+    "event"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/bitovi/syn.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
+  "requiredFiles": [
+    "amd/browsers.min.js",
+    "amd/key.min.js",
+    "amd/mouse.min.js",
+    "amd/syn.min.js",
+    "amd/typeable.min.js",
+    "amd/drag.min.js",
+    "amd/key.support.min.js",
+    "amd/mouse.support.min.js",
+    "amd/synthetic.min.js",
+    "cjs/browsers.min.js",
+    "cjs/key.min.js",
+    "cjs/mouse.min.js",
+    "cjs/typeable.min.js",
+    "cjs/drag.min.js",
+    "cjs/key.support.min.js",
+    "cjs/mouse.support.min.js",
+    "cjs/synthetic.min.js",
+    "global/syn.min.js"
+  ]
+}

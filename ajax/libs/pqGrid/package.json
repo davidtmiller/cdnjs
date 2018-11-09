@@ -1,0 +1,64 @@
+{
+  "name": "pqGrid",
+  "title": "ParamQuery Grid",
+  "filename": "pqgrid.min.js",
+  "version": "2.0.4",
+  "author": {
+    "name": "Paramvir Dhindsa",
+    "email": "pdhindsa@paramquery.com",
+    "url": "http://www.paramquery.com/"
+  },
+  "license": "GPL-3.0",
+  "description": "Data grid inspired by MS Excel, provides sorting, filtering, paging, grouping, nesting, rows and cell selections, frozen rows, frozen columns, Add, delete, update, search, can display HTML, JSON, Array, XML, inline editing, validations, virtual rendering, virtual scrolling, cross browser, cross platform, Themeroller ready with 24 ready to use themes.",
+  "homepage": "http://paramquery.com/",
+  "keywords": [
+    "ParamQuery Grid",
+    "grid",
+    "excel",
+    "datagrid",
+    "table",
+    "ajax",
+    "ui",
+    "sort",
+    "filter",
+    "nesting",
+    "export",
+    "i18n",
+    "summary",
+    "themeRoller",
+    "frozen",
+    "group",
+    "search",
+    "crud",
+    "paging"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paramquery/grid"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/paramquery/grid.git",
+    "basePath": "",
+    "files": [
+      "pqgrid*.+(js|css)",
+      "images/*.+(png|gif)",
+      "localize/pq-localize-*.js",
+      "themes/**/*"
+    ]
+  },
+  "requiredFiles": [
+    "localize/pq-localize-de.min.js",
+    "localize/pq-localize-en.min.js",
+    "localize/pq-localize-es.min.js",
+    "localize/pq-localize-fr.min.js",
+    "localize/pq-localize-hu.min.js",
+    "localize/pq-localize-it.min.js",
+    "localize/pq-localize-ja.min.js",
+    "localize/pq-localize-nl.min.js",
+    "localize/pq-localize-pl.min.js",
+    "localize/pq-localize-pt.min.js",
+    "localize/pq-localize-tr.min.js",
+    "localize/pq-localize-zh.min.js"
+  ]
+}

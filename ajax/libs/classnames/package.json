@@ -1,9 +1,8 @@
 {
   "name": "classnames",
   "filename": "index.min.js",
-  "version": "2.2.0",
+  "version": "2.2.3",
   "homepage": "http://jedwatson.github.io/classnames/",
-  "authors": "Jed Watson",
   "description": "A simple utility for conditionally joining classNames together",
   "keywords": [
     "react",
@@ -31,5 +30,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JedWatson/classnames"
-  }
+  },
+  "author": "Jed Watson"
 }

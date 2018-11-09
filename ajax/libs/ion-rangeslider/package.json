@@ -3,11 +3,6 @@
   "filename": "js/ion.rangeSlider.min.js",
   "version": "2.1.2",
   "homepage": "https://github.com/IonDen/ion.rangeSlider",
-  "authors": {
-    "name": "IonDen",
-    "url": "https://github.com/IonDen",
-    "email": "denis.ineshin@gmail.com"
-  },
   "description": "Cool, comfortable and easily customizable range slider with many options and skin support",
   "keywords": [
     "jquery-plugin",
@@ -46,5 +41,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/IonDen/ion.rangeSlider"
+  },
+  "author": {
+    "name": "IonDen",
+    "url": "https://github.com/IonDen",
+    "email": "denis.ineshin@gmail.com"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "unsemantic",
   "filename": "unsemantic-grid-responsive.min.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unsemantic is a fluid grid system that is the successor to the 960 Grid System. It works in a similar way, but instead of being a set number of columns, it's entirely based on percentages.",
   "homepage": "http://unsemantic.com",
   "keywords": [
@@ -9,12 +9,6 @@
     "unsemantic grid",
     "responsive grid",
     "grid system"
-  ],
-  "maintainers": [
-    {
-      "name": "Nathan Smith",
-      "web": "http://sonspring.com/"
-    }
   ],
   "autoupdate": {
     "source": "git",
@@ -58,8 +52,9 @@
     "type": "git",
     "url": "https://github.com/nathansmith/unsemantic/"
   },
-  "license": [
+  "licenses": [
     "GPL",
     "MIT"
-  ]
+  ],
+  "author": "Nathan Smith"
 }

@@ -10,13 +10,6 @@
     "selector",
     "ender"
   ],
-  "maintainers": [
-    {
-      "name": "Diego Perini",
-      "email": "diego.perini@gmail.com",
-      "web": "http://www.iport.it/"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dperini/nwmatcher.git",
@@ -33,5 +26,10 @@
     "type": "git",
     "url": "git://github.com/dperini/nwmatcher.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "Diego Perini",
+    "email": "diego.perini@gmail.com",
+    "web": "http://www.iport.it/"
+  }
 }
