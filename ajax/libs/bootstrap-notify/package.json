@@ -20,5 +20,6 @@
       "css/bootstrap-notify*.css",
       "js/bootstrap-notify*.js"
     ]
-  }
+  },
+  "license": "Apache-2.0"
 }
