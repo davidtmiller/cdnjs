@@ -3,7 +3,6 @@
   "filename": "angular-recaptcha.min.js",
   "version": "2.2.5",
   "homepage": "https://github.com/vividcortex/angular-recaptcha",
-  "authors": "VividCortex",
   "description": "An AngularJS module to ease usage of reCaptcha inside a form",
   "keywords": [
     "angular",
@@ -29,5 +28,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vividcortex/angular-recaptcha"
-  }
+  },
+  "author": "VividCortex"
 }

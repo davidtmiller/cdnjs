@@ -9,7 +9,6 @@
     "type": "git",
     "url": "https://github.com/frozenui/frozenui.git"
   },
-  "licenses": "MIT",
   "description": "为移动端web而生",
   "autoupdate": {
     "source": "git",

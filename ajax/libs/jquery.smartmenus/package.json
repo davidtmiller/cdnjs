@@ -3,7 +3,6 @@
   "filename": "jquery.smartmenus.min.js",
   "version": "1.0.0",
   "homepage": "http://www.smartmenus.org/",
-  "authors": "Vasil Dinkov <vasko.dinkov@gmail.com>",
   "description": "Advanced jQuery website menu plugin. Mobile first, responsive and accessible list-based website menus that work on all devices.",
   "keywords": [
     "menu",
@@ -33,5 +32,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vadikom/smartmenus"
-  }
+  },
+  "author": "Vasil Dinkov <vasko.dinkov@gmail.com>"
 }

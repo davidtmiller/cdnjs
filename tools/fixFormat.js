@@ -33,7 +33,22 @@ async.each(packages, function(item, callback) {
   delete pkg.engines;
   delete pkg.engine;
   delete pkg.directories;
-
+  if ((pkg.authors != undefined) && !Array.isArray(pkg.authors)) {
+    pkg.author = pkg.authors;
+    delete pkg.authors;
+  }
+  if ((pkg.author != undefined) && Array.isArray(pkg.author)) {
+    pkg.authors = pkg.author;
+    delete pkg.author;
+  }
+  if ((pkg.licenses != undefined) && !Array.isArray(pkg.licenses)) {
+    pkg.license = pkg.licenses;
+    delete pkg.licenses;
+  }
+  if ((pkg.license != undefined) && Array.isArray(pkg.license)) {
+    pkg.licenses = pkg.license;
+    delete pkg.license;
+  }
   fs.writeFileSync(item, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
   callback();
 });

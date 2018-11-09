@@ -6,7 +6,6 @@
   "homepage": "http://git.blivesta.com/drawer",
   "author": "blivesta",
   "authorUrl": "http://blivesta.com",
-  "licenses": "MIT",
   "dependencies": {
     "jquery": ">= 1.9.0",
     "iscroll": "~5.1.3"

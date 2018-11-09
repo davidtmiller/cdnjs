@@ -3,7 +3,6 @@
   "filename": "js/fileinput.min.js",
   "version": "4.2.8",
   "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
-  "authors": "Kartik Visweswaran <kartikv2@gmail.com>",
   "description": "An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, ajax uploads, and more features.",
   "keywords": [
     "bootstrap",
@@ -57,5 +56,6 @@
     "js/fileinput_locale_uk.min.js",
     "js/fileinput_locale_zh-TW.min.js",
     "js/fileinput_locale_zh.min.js"
-  ]
+  ],
+  "author": "Kartik Visweswaran <kartikv2@gmail.com>"
 }

@@ -3,10 +3,6 @@
   "filename": "js/xeditable.min.js",
   "version": "0.1.9",
   "homepage": "http://vitalets.github.io/angular-xeditable",
-  "authors": {
-    "name": "Vitaliy Potapov",
-    "email": "noginsk@rambler.ru"
-  },
   "description": "Edit-in-place for angular.js",
   "keywords": [
     "editable",
@@ -26,5 +22,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vitalets/angular-xeditable"
+  },
+  "author": {
+    "name": "Vitaliy Potapov",
+    "email": "noginsk@rambler.ru"
   }
 }

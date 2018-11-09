@@ -8,7 +8,6 @@
     "name": "blivesta",
     "url": "http://blivesta.com"
   },
-  "licenses": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/blivesta/animsition.git"

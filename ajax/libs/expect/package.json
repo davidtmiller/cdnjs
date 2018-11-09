@@ -1,6 +1,6 @@
 {
   "name": "expect",
-  "version": "1.12.2",
+  "version": "1.13.4",
   "description": "Write better assertions",
   "homepage": "https://github.com/mjackson/expect",
   "license": "MIT",
@@ -16,10 +16,12 @@
     "url": "https://github.com/mjackson/expect.git"
   },
   "npmName": "expect",
-  "npmFileMap": {
-    "basePath": "umd",
-    "files": [
-      "*.js"
-    ]
-  }
+  "npmFileMap": [
+    {
+      "basePath": "umd",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }

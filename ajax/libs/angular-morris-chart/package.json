@@ -4,7 +4,6 @@
   "filename": "angular-morris-chart.min.js",
   "description": "Wrapper of morris.js for AngularJS",
   "homepage": "https://angular-morris-chart.stpa.co/",
-  "authors": "Stewan Pacheco <talk@stpa.co>",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -23,5 +22,6 @@
         "angular-morris-chart*.js"
       ]
     }
-  ]
+  ],
+  "author": "Stewan Pacheco <talk@stpa.co>"
 }

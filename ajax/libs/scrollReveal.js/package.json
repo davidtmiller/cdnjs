@@ -1,7 +1,7 @@
 {
   "name": "scrollReveal.js",
-  "filename": "scrollReveal.min.js",
-  "version": "2.3.2",
+  "filename": "scrollreveal.min.js",
+  "version": "3.0.0",
   "description": "Easily reveal elements as they enter the viewport.",
   "author": "Julian Lloyd",
   "homepage": "https://github.com/jlmakes/scrollReveal.js",

@@ -4,11 +4,6 @@
   "description": "Enlarge images on click or mouseover.",
   "version": "1.7.14",
   "homepage": "http://www.jacklmoore.com/zoom",
-  "authors": {
-    "name": "Jack Moore",
-    "url": "http://www.jacklmoore.com",
-    "email": "hello@jacklmoore.com"
-  },
   "keywords": [
     "zoom",
     "images",
@@ -28,5 +23,10 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/jackmoore/zoom.git"
+  },
+  "author": {
+    "name": "Jack Moore",
+    "url": "http://www.jacklmoore.com",
+    "email": "hello@jacklmoore.com"
   }
 }

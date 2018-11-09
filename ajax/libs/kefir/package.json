@@ -1,7 +1,7 @@
 {
   "name": "kefir",
   "filename": "kefir.min.js",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Reactive Programming library for JavaScript inspired by Bacon.js and RxJS with focus on high performance and low memory usage",
   "keywords": [
     "frp",

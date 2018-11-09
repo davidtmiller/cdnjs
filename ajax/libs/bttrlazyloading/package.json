@@ -3,7 +3,6 @@
   "filename": "jquery.bttrlazyloading.min.js",
   "version": "1.0.8",
   "homepage": "http://bttrlazyloading.julienrenaux.fr",
-  "authors": "Julien Renaux",
   "description": "BttrLazyLoading",
   "keywords": [
     "BttrLazyLoading",
@@ -23,5 +22,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/shprink/BttrLazyLoading"
-  }
+  },
+  "author": "Julien Renaux"
 }

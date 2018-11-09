@@ -3,7 +3,6 @@
   "filename": "nuclear.min.js",
   "version": "1.2.1",
   "homepage": "https://github.com/optimizely/nuclear-js",
-  "authors": "Jordan Garcia",
   "description": "Immutable, reactive Flux architecture. UI Agnostic.",
   "keywords": [
     "flux",
@@ -27,5 +26,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/optimizely/nuclear-js"
-  }
+  },
+  "author": "Jordan Garcia"
 }

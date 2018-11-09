@@ -19,10 +19,6 @@
     "AngularJS",
     "Cordova"
   ],
-  "author": [
-    "Max Lynch",
-    "Paolo Bernasconi"
-  ],
   "homepage": "http://ngcordova.com/",
   "autoupdate": {
     "source": "git",
@@ -31,5 +27,9 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "authors": [
+    "Max Lynch",
+    "Paolo Bernasconi"
+  ]
 }

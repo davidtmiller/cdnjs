@@ -10,7 +10,6 @@
     "zocial"
   ],
   "homepage": "http://zocial.smcllns.com/",
-  "authors": "Sam Collins",
   "filename": "css/zocial.min.css",
   "repository": {
     "type": "git",
@@ -24,5 +23,6 @@
     "files": [
       "css/zocial*"
     ]
-  }
+  },
+  "author": "Sam Collins"
 }

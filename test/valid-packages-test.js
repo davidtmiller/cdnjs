@@ -174,6 +174,8 @@ packages.map(function (pkg) {
             }
 
         } else if (json.npmFileMap) {
+            assert.ok(Array.isArray(json.npmFileMap),
+                pkg_name(pkg) + ": npmFileMap should be an array and include one or multiply objects to describe corresponding bash path and files");
             for (var i in json.npmFileMap) {
                 for (var j in json.npmFileMap[i].files) {
                     assert.ok(!fileMapPostfixes.test(json.npmFileMap[i].files[j]),
@@ -182,7 +184,7 @@ packages.map(function (pkg) {
             }
         }
     }
-    package_vows[pname + ": should not have both multiple auto-update configs"] = function(pkg) {
+    package_vows[pname + ": should not have multiple auto-update configs"] = function(pkg) {
         var json = parse(pkg, true, true);
         assert.ok(json.autoupdate === undefined || json.npmFileMap === undefined,
             pkg_name(pkg) + ": has both git and npm auto-update config, should remove one of it");
@@ -207,9 +209,26 @@ packages.map(function (pkg) {
 
     package_vows[pname + ": format check"] = function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
-            correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n';
+            correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n',
+            content = JSON.parse(correct);
         assert.ok(orig === correct,
-            pkg_name(pkg) + ": package.json wrong indent, please use our tool: tools/fixFormat.js to fix it for you, here is an example: (Please ignore the first 2 spaces and the wildcard symbol in autoupadte config due to a bug)\n" + correct +"\n");
+            pkg_name(pkg) + ": package.json wrong indent, please use 2-spaces as indent, remove trailing spaces, you can use our tool: tools/fixFormat.js to fix it for you, here is an example: (Please ignore the first 2 spaces and the wildcard symbol in autoupadte config due to a bug)\n" + correct +"\n");
+        if (content.author != undefined) {
+            assert.ok(!Array.isArray(content.author),
+                pkg_name(pkg) + ": author field in package.json should be a object or string to show its author info, if there is multiple authors info, you should use 'authors' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
+        }
+        if (content.authors != undefined) {
+            assert.ok(Array.isArray(content.authors),
+                pkg_name(pkg) + ": authors field in package.json should be an array to include multiple authors info, if there is only one author, you should use 'author' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
+        }
+        if (content.licenses != undefined) {
+            assert.ok(Array.isArray(content.licenses),
+                pkg_name(pkg) + ": licenses field in package.json should be an array to include multiple licenses info, if there is only one license, you should use 'license' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
+        }
+        if (content.author != undefined) {
+            assert.ok(!Array.isArray(content.author),
+                pkg_name(pkg) + ": author field in package.json should be a object or string to show its author info, if there is multiple authors info, you should use 'authors' instead, you can use our tool: tools/fixFormat.js to fix it for you.");
+        }
     }
 
     package_vows[pname + ": useless fields check"] = function (pkg) {

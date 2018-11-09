@@ -13,18 +13,6 @@
     "javascript",
     "framework"
   ],
-  "author": [
-    {
-      "name": "zhaoda",
-      "email": "zd6437@gmail.com",
-      "url": "http://zhaoda.net"
-    },
-    {
-      "name": "linchao",
-      "email": "lin-chao@foxmail.com",
-      "url": "http://linchao.info"
-    }
-  ],
   "license": "MIT",
   "homepage": "https://github.com/zhaoda/spa",
   "npmName": "spa.js",
@@ -36,5 +24,17 @@
       ]
     }
   ],
-  "filename": "spa.min.js"
+  "filename": "spa.min.js",
+  "authors": [
+    {
+      "name": "zhaoda",
+      "email": "zd6437@gmail.com",
+      "url": "http://zhaoda.net"
+    },
+    {
+      "name": "linchao",
+      "email": "lin-chao@foxmail.com",
+      "url": "http://linchao.info"
+    }
+  ]
 }

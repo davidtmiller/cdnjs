@@ -13,7 +13,7 @@
     "jquery",
     "framework"
   ],
-  "license": [
+  "licenses": [
     {
       "type": "GPLv2",
       "url": "https://github.com/ericmmartin/simplemodal/blob/master/License.txt"

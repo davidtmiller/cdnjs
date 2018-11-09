@@ -16,7 +16,6 @@
     "ui",
     "jQuery"
   ],
-  "licenses": "MIT",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jackmoore/autosize.git",

@@ -162,7 +162,7 @@ A URL is ideal. Providing the origin of your files is very helpful as the cdnjs 
 
 ## Enabling `npm`(recommended) or `git` auto update
 
-cdnjs automatically updates libraries that are known to be hosted on `npm` or git repo, e.g., Lodash. npm auto-update relies on each release and git auto-update relies on the [tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging) in git repo. This auto-update script runs every hour, but the update result **won't be committed until one of our maintainers audit the updates**, because many libs will change the naming or directory structure during different versions, and we may need to minify the lib without pre-minified dist files, so **it'll be reasonable to delay for at most 30 hours**, if you think there is a lib didn't been updated, please wait at least 30 hours for the process to audit it.
+cdnjs automatically updates libraries that are known to be hosted on `npm` or git repo, e.g., function-plot. npm auto-update relies on each release and git auto-update relies on the [tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging) in git repo. This auto-update script runs every hour, but the update result **won't be committed until one of our maintainers audit the updates**, because many libs will change the naming or directory structure during different versions, and we may need to minify the lib without pre-minified dist files, so **it'll be reasonable to delay for at most 30 hours**, if you think there is a lib didn't been updated, please wait at least 30 hours for the process to audit it.
 
 To add `git` auto-update config to a library, update the `package.json` with configuration details and submit your pull request. An example configuration:
 
@@ -182,12 +182,12 @@ To add `git` auto-update config to a library, update the `package.json` with con
 To add an `npm` hook to a library, update the `package.json` with configuration details and submit your pull request. An example configuration:
 
 ```js
-  "npmName": "lodash",
+  "npmName": "function-plot",
   "npmFileMap": [
     {
       "basePath": "dist",
       "files": [
-        "*.js"
+        "**/*"
       ]
     }
   ]
@@ -204,16 +204,18 @@ The above example looks in the tarball whose structure might look like this:
 
 ```
 |__dist
-| |__lodash.compat.js
-| |__lodash.compat.min.js
-| |__lodash.js
-| |__lodash.min.js
-| |__lodash.underscore.js
-| |__lodash.underscore.min.js
-|__LICENSE.txt
-|__lodash.js
+| |__function-plot.js
+|__bower.json
+|__index.js
+|__site.js
 |__package.json
 |__README.md
+|__lib
+| |__...
+|__node_modules
+| |__...
+|__sandbox
+| |__...
 ```
 
 The auto-update process will look for `dist` inside the named tarball and copy all the JavaScript file to cdnjs, minus the `dist` path. The resulting files in cdnjs will be:
@@ -221,14 +223,9 @@ The auto-update process will look for `dist` inside the named tarball and copy a
 ```
 |__ajax
   |__libs
-    |__lodash.js
+    |__function-plot
       |__x.y.z
-        |__lodash.compat.js
-        |__lodash.compat.min.js
-        |__lodash.js
-        |__lodash.min.js
-        |__lodash.underscore.js
-        |__lodash.underscore.min.js
+        |__function-plot.js
 ```
 
 ...where `x.y.z` is the version number, extracted from the `package.json` on npm.
