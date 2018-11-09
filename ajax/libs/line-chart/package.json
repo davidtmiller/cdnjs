@@ -1,6 +1,6 @@
 {
   "name": "line-chart",
-  "version": "2.0.18",
+  "version": "2.0.27",
   "filename": "LineChart.min.js",
   "homepage": "https://github.com/n3-charts/line-chart",
   "repository": {
@@ -16,8 +16,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "LineChart.min.css"
   ]
 }

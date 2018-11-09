@@ -1,0 +1,28 @@
+{
+  "name": "gss-engine",
+  "description": "GSS styling engine",
+  "filename": "gss.min.js",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gss/engine.git"
+  },
+  "keywords": [
+    "gss"
+  ],
+  "dependencies": {
+    "ccss-compiler": "~1.1.2",
+    "vfl-compiler": "~1.1.3",
+    "cassowary": "git://github.com/slightlyoff/cassowary.js.git#829729cb602d4a17341b4d1a5dba6767bf1cfd5c"
+  },
+  "npmName": "gss-engine",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*.!(coffee)"
+      ]
+    }
+  ],
+  "license": "MIT"
+}

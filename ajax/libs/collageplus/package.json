@@ -32,8 +32,5 @@
       "css/transitions*.css",
       "extras/jquery*.js"
     ]
-  },
-  "requiredFiles": [
-    "css/transitions.min.css"
-  ]
+  }
 }

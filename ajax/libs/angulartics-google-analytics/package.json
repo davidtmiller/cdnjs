@@ -1,8 +1,8 @@
 {
   "name": "angulartics-google-analytics",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Google Analytics plugin for Angulartics",
-  "filename": "angulartics-google-analytics.min.js",
+  "filename": "angulartics-ga.min.js",
   "keywords": [
     "google",
     "analytics",

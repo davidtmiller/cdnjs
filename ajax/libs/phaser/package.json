@@ -1,7 +1,7 @@
 {
   "name": "phaser",
   "filename": "phaser.min.js",
-  "version": "2.4.6",
+  "version": "2.5.0",
   "description": "A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.",
   "homepage": "http://phaser.io/",
   "keywords": [
@@ -16,19 +16,19 @@
     "javascript",
     "typescript"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/photonstorm/phaser.git",
-    "basePath": "build/",
-    "files": [
-      "**/*.js",
-      "*.map"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/photonstorm/phaser.git"
   },
   "license": "MIT",
-  "author": "Richard Davey <rdavey@gmail.com> (http://www.photonstorm.com)"
+  "author": "Richard Davey <rdavey@gmail.com> (http://www.photonstorm.com)",
+  "npmName": "phaser",
+  "npmFileMap": [
+    {
+      "basePath": "build",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }

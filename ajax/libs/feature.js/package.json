@@ -20,5 +20,6 @@
         "feature*"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

@@ -27,9 +27,5 @@
       "jwerty*.js"
     ]
   },
-  "requiredFiles": [
-    "jwerty.canBridge.min.js",
-    "jwerty.enderBridge.min.js"
-  ],
   "license": "MIT"
 }

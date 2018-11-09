@@ -17,5 +17,12 @@
       "page.min.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "page",
+    "route",
+    "router",
+    "routes",
+    "pushState"
+  ]
 }

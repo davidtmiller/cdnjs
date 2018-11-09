@@ -19,9 +19,6 @@
       "radian*.+(js|css)"
     ]
   },
-  "requiredFiles": [
-    "radian.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/openbrainsrc/Radian"

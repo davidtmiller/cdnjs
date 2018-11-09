@@ -22,5 +22,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/HubSpot/select.git"
-  }
+  },
+  "keywords": [
+    "select",
+    "options",
+    "javascript",
+    "css"
+  ]
 }

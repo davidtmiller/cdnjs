@@ -2,7 +2,7 @@
   "name": "prism",
   "title": "Prism",
   "filename": "prism.min.js",
-  "version": "1.4.1",
+  "version": "1.5.1",
   "description": "Lightweight, robust, elegant syntax highlighting. A spin-off project from Dabblet.",
   "homepage": "http://prismjs.com/",
   "keywords": [
@@ -29,29 +29,5 @@
         "prism*.+(js|map)"
       ]
     }
-  ],
-  "requiredFiles": [
-    "plugins/autolinker/prism-autolinker.min.css",
-    "plugins/command-line/prism-command-line.min.css",
-    "plugins/ie8/prism-ie8.min.css",
-    "plugins/line-highlight/prism-line-highlight.min.css",
-    "plugins/line-numbers/prism-line-numbers.min.css",
-    "plugins/previewer-angle/prism-previewer-angle.min.css",
-    "plugins/previewer-base/prism-previewer-base.min.css",
-    "plugins/previewer-color/prism-previewer-color.min.css",
-    "plugins/previewer-easing/prism-previewer-easing.min.css",
-    "plugins/previewer-gradient/prism-previewer-gradient.min.css",
-    "plugins/previewer-time/prism-previewer-time.min.css",
-    "plugins/show-invisibles/prism-show-invisibles.min.css",
-    "plugins/show-language/prism-show-language.min.css",
-    "plugins/wpd/prism-wpd.min.css",
-    "themes/prism-coy.min.css",
-    "themes/prism-dark.min.css",
-    "themes/prism-funky.min.css",
-    "themes/prism-okaidia.min.css",
-    "themes/prism-solarizedlight.min.css",
-    "themes/prism-tomorrow.min.css",
-    "themes/prism-twilight.min.css",
-    "themes/prism.min.css"
   ]
 }

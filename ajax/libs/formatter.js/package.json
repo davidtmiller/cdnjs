@@ -22,17 +22,5 @@
     "files": [
       "**/*"
     ]
-  },
-  "requiredFiles": [
-    "amd/formatter.min.js",
-    "amd/inpt-sel.min.js",
-    "amd/pattern-matcher.min.js",
-    "amd/pattern.min.js",
-    "amd/utils.min.js",
-    "common/formatter.min.js",
-    "common/inpt-sel.min.js",
-    "common/pattern-matcher.min.js",
-    "common/pattern.min.js",
-    "common/utils.min.js"
-  ]
+  }
 }

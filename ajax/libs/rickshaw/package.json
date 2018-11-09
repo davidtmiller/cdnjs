@@ -34,5 +34,6 @@
         "rickshaw.min.js"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

@@ -27,8 +27,5 @@
       "jquery-lang*.js",
       "langpack/nonDynamic*.js"
     ]
-  },
-  "requiredFiles": [
-    "langpack/nonDynamic.min.js"
-  ]
+  }
 }

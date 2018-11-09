@@ -18,5 +18,13 @@
       "angular-pusher.min.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "AngularJS",
+    "provider",
+    "service",
+    "angular-pusher",
+    "pusher"
+  ]
 }

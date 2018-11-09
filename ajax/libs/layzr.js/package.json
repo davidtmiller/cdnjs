@@ -1,6 +1,6 @@
 {
   "name": "layzr.js",
-  "version": "2.0.4",
+  "version": "2.2.1",
   "description": "A small, fast, modern, and dependency-free library for lazy loading.",
   "homepage": "http://callmecavs.github.io/layzr.js/",
   "author": "Michael Cavalea",

@@ -1,0 +1,33 @@
+{
+  "name": "videojs-contrib-dash",
+  "filename": "videojs-dash.min.js",
+  "description": "A Video.js source-handler providing MPEG-DASH playback.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/videojs/videojs-contrib-dash.git"
+  },
+  "version": "2.3.0",
+  "author": "Brightcove",
+  "keywords": [
+    "video.js",
+    "dash.js",
+    "widevine",
+    "playready",
+    "dash",
+    "MPEG-DASH"
+  ],
+  "dependencies": {
+    "dashjs": "Dash-Industry-Forum/dash.js#v2.1.1",
+    "global": "^4.3.0",
+    "video.js": "^5.0.0"
+  },
+  "npmName": "videojs-contrib-dash",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}

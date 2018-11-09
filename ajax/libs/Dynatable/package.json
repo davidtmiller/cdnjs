@@ -28,8 +28,5 @@
     "files": [
       "jquery.dynatable.+(css|js)"
     ]
-  },
-  "requiredFiles": [
-    "jquery.dynatable.min.css"
-  ]
+  }
 }

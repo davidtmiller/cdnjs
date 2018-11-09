@@ -28,8 +28,5 @@
     "files": [
       "jquery.+(plugin|countdown)*.+(js|css)"
     ]
-  },
-  "requiredFiles": [
-    "jquery.countdown.min.css"
-  ]
+  }
 }

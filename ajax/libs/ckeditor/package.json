@@ -1,7 +1,7 @@
 {
   "name": "ckeditor",
   "filename": "ckeditor.js",
-  "version": "4.5.4",
+  "version": "4.5.9",
   "description": "The development version of CKEditor - JavaScript WYSIWYG web text editor.",
   "homepage": "http://ckeditor.com/",
   "keywords": [
@@ -17,5 +17,15 @@
     "deprecated_LGPL-2.1+",
     "MPL-1.1"
   ],
-  "author": "CKSource (http://cksource.com/)"
+  "author": "CKSource (http://cksource.com/)",
+  "npmName": "ckeditor",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "+(adapters|skins|plugins|lang)/**/*.+(js|css|png|gif|map|jpg)",
+        "+(build-config|ckeditor|config|contents|styles).+(js|css|map)"
+      ]
+    }
+  ]
 }

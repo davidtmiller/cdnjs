@@ -22,8 +22,5 @@
     "files": [
       "le*.js"
     ]
-  },
-  "requiredFiles": [
-    "le.dyn.min.js"
-  ]
+  }
 }

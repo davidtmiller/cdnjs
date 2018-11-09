@@ -1,0 +1,74 @@
+{
+  "name": "antd",
+  "filename": "antd.min.js",
+  "version": "1.6.3",
+  "description": "An UI design language",
+  "homepage": "http://ant.design/",
+  "author": {
+    "name": "afc163",
+    "url": "https://github.com/afc163"
+  },
+  "keywords": [
+    "ant",
+    "design",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "array-tree-filter": "~1.0.0",
+    "classnames": "~2.2.0",
+    "css-animation": "~1.2.3",
+    "gregorian-calendar": "~4.1.0",
+    "gregorian-calendar-format": "~4.1.0",
+    "normalize.css": "^4.1.1",
+    "rc-animate": "~2.0.3",
+    "rc-calendar": "~5.5.1",
+    "rc-cascader": "~0.9.8",
+    "rc-checkbox": "~1.3.4",
+    "rc-collapse": "~1.6.2",
+    "rc-dialog": "~6.0.1",
+    "rc-dropdown": "~1.4.8",
+    "rc-form": "~0.15.2",
+    "rc-input-number": "~2.5.8",
+    "rc-menu": "~4.12.0",
+    "rc-notification": "~1.3.4",
+    "rc-pagination": "~1.5.2",
+    "rc-progress": "~1.0.4",
+    "rc-queue-anim": "~0.11.9",
+    "rc-radio": "~2.0.0",
+    "rc-rate": "~1.1.1",
+    "rc-select": "~6.3.0",
+    "rc-slider": "~3.6.0",
+    "rc-steps": "~2.1.0",
+    "rc-switch": "~1.4.1",
+    "rc-table": "~4.0.3",
+    "rc-tabs": "~5.9.0",
+    "rc-time-picker": "~1.1.4",
+    "rc-tooltip": "~3.3.2",
+    "rc-tree": "~1.3.0",
+    "rc-tree-select": "~1.6.0",
+    "rc-upload": "~1.12.0",
+    "rc-util": "~3.1.3",
+    "react-slick": "~0.12.0",
+    "warning": "~2.1.0"
+  },
+  "npmName": "antd",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*.!(less)"
+      ]
+    }
+  ]
+}

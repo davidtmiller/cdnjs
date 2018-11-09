@@ -1,7 +1,7 @@
 {
   "name": "jsPlumb",
-  "version": "1.4.1",
-  "filename": "jquery.jsPlumb-1.4.1-all-min.js",
+  "version": "2.0.7",
+  "filename": "jsPlumb.min.js",
   "description": "Visual connectivity for webapps",
   "homepage": "http://jsplumbtoolkit.com",
   "keywords": [

@@ -1,0 +1,45 @@
+{
+  "name": "diff2html",
+  "version": "1.3.2",
+  "filename": "diff2html.min.js",
+  "homepage": "https://diff2html.rtfpessoa.xyz/",
+  "description": "Fast Diff to colorized HTML",
+  "keywords": [
+    "git",
+    "diff",
+    "pretty",
+    "side",
+    "line",
+    "side-by-side",
+    "line-by-line",
+    "character",
+    "highlight",
+    "pretty",
+    "color",
+    "html",
+    "diff2html",
+    "difftohtml",
+    "colorized"
+  ],
+  "author": {
+    "name": "Rodrigo Fernandes",
+    "email": "rtfrodrigo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/rtfpessoa/diff2html.git"
+  },
+  "dependencies": {
+    "diff": "^2.2.1"
+  },
+  "license": "MIT",
+  "npmName": "diff2html",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}

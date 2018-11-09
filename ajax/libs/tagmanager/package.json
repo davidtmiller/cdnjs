@@ -31,8 +31,5 @@
       "tagmanager.css"
     ]
   },
-  "requiredFiles": [
-    "tagmanager.min.css"
-  ],
   "license": "MPL-2.0"
 }

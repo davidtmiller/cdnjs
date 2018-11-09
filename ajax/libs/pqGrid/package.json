@@ -46,19 +46,5 @@
       "localize/pq-localize-*.js",
       "themes/**/*"
     ]
-  },
-  "requiredFiles": [
-    "localize/pq-localize-de.min.js",
-    "localize/pq-localize-en.min.js",
-    "localize/pq-localize-es.min.js",
-    "localize/pq-localize-fr.min.js",
-    "localize/pq-localize-hu.min.js",
-    "localize/pq-localize-it.min.js",
-    "localize/pq-localize-ja.min.js",
-    "localize/pq-localize-nl.min.js",
-    "localize/pq-localize-pl.min.js",
-    "localize/pq-localize-pt.min.js",
-    "localize/pq-localize-tr.min.js",
-    "localize/pq-localize-zh.min.js"
-  ]
+  }
 }

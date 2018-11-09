@@ -23,8 +23,5 @@
     "files": [
       "jquery.scrollbar*.+(css|js)"
     ]
-  },
-  "requiredFiles": [
-    "jquery.scrollbar.min.css"
-  ]
+  }
 }

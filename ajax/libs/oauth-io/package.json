@@ -1,7 +1,7 @@
 {
   "name": "oauth-io",
   "filename": "oauth.min.js",
-  "version": "0.9.0",
+  "version": "0.5.2",
   "description": "OAuth that just works",
   "repository": {
     "type": "git",
@@ -14,5 +14,14 @@
     "security"
   ],
   "author": "The OAuth.io Team",
-  "license": "Apache2"
+  "license": "Apache-2.0",
+  "npmName": "oauthio-web",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
 }

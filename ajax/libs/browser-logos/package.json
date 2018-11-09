@@ -1,0 +1,23 @@
+{
+  "name": "browser-logos",
+  "description": "Collection of high resolution web browser logos with transparent backgrounds",
+  "filename": "archive/chromium_12-48/chromium_12-48_128x128.png",
+  "version": "30.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alrra/browser-logos.git"
+  },
+  "keywords": [
+    "browser-logos",
+    "high-resolution",
+    "logos"
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/alrra/browser-logos.git",
+    "basePath": "",
+    "files": [
+      "**/!(*.+(json|md))"
+    ]
+  }
+}

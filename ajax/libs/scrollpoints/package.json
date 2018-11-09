@@ -20,5 +20,9 @@
       ]
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "scroll",
+    "callbacks"
+  ]
 }

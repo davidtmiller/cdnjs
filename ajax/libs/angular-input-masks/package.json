@@ -1,7 +1,7 @@
 {
   "name": "angular-input-masks",
   "filename": "angular-input-masks.min.js",
-  "version": "2.1.1",
+  "version": "2.4.0",
   "description": "Personalized input masks for AngularJS",
   "repository": {
     "type": "git",

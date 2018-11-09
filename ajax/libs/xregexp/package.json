@@ -1,7 +1,7 @@
 {
   "name": "xregexp",
-  "filename": "xregexp-min.js",
-  "version": "2.0.0",
+  "filename": "xregexp-all.min.js",
+  "version": "3.1.1",
   "description": "Extended regular expressions",
   "homepage": "http://xregexp.com/",
   "keywords": [
@@ -13,5 +13,13 @@
     "url": "https://github.com/slevithan/XRegExp.git"
   },
   "license": "MIT",
-  "author": "Steven Levithan <steves_list@hotmail.com>"
+  "author": "Steven Levithan <steves_list@hotmail.com>",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/slevithan/XRegExp.git",
+    "basePath": "",
+    "files": [
+      "xregexp*"
+    ]
+  }
 }

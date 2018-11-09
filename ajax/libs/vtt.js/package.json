@@ -1,0 +1,28 @@
+{
+  "name": "vtt.js",
+  "filename": "vtt.min.js",
+  "description": "A JavaScript implementation of the WebVTT specification.",
+  "version": "0.12.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla/vtt.js.git"
+  },
+  "author": "Andreas Gal <gal@mozilla.com>",
+  "keywords": [
+    "vtt",
+    "webvtt",
+    "track",
+    "captions",
+    "subtitles",
+    "text track"
+  ],
+  "license": "Apache-2.0",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/mozilla/vtt.js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
+}

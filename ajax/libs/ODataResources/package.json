@@ -1,0 +1,28 @@
+{
+  "name": "ODataResources",
+  "filename": "odataresources.min.js",
+  "version": "1.0.22",
+  "description": "Allows making fluent OData queries from angular resources",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devnixs/ODataAngularResources"
+  },
+  "keywords": [
+    "OData",
+    "Angular",
+    "Resources"
+  ],
+  "author": "Raphael ATALLAH",
+  "license": "MIT",
+  "dependencies": {
+    "es5-shim": "^4.5.8"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/devnixs/ODataAngularResources.git",
+    "basePath": "build",
+    "files": [
+      "**/*"
+    ]
+  }
+}

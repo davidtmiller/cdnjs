@@ -1,7 +1,7 @@
 {
   "name": "sass.js",
   "filename": "sass.min.js",
-  "version": "0.9.7",
+  "version": "0.9.10",
   "description": "Sass.js is a convenience API for the JavaScript libsass (compiled with Emscripten)",
   "homepage": "https://github.com/medialize/sass.js",
   "keywords": [

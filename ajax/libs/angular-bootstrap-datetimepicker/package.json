@@ -35,8 +35,5 @@
         "js/datetimepicker*.js"
       ]
     }
-  ],
-  "requiredFiles": [
-    "css/datetimepicker.min.css"
   ]
 }

@@ -7,7 +7,7 @@
 * http://naver.github.io/egjs
 *
 * @version 1.1.0
-* @SHA-1 c9acb90 (1.1.0-rc)
+* @SHA-1 fb4a69e (1.1.0-rc)
 *
 * For custom build use egjs-cli
 * https://github.com/naver/egjs-cli
@@ -1353,7 +1353,11 @@ eg.module("scrollEnd", ["jQuery", eg, window], function($, ns, global) {
 
 		// Browsers that trigger scroll event like scrollstop : SCROLLBASE
 		if (osInfo.name === "ios") {
-			if (browserInfo.webview === true || osVersion <= 7) {
+
+			// webview : TIMERBASE
+			if (browserInfo.webview === true) {
+				retValue = TIMERBASE;
+			} else if (osVersion <= 7) {
 				retValue = SCROLLBASE;
 			}
 		} else if (osInfo.name === "android") {
@@ -2547,7 +2551,12 @@ var SUPPORT_TOUCH = "ontouchstart" in global;
 
 						// css properties were removed due to usablility issue
 						// http://hammerjs.github.io/jsdoc/Hammer.defaults.cssProps.html
-						cssProps: {},
+						cssProps: {
+							userSelect: "none",
+							touchSelect: "none",
+							touchCallout: "none",
+							userDrag: "none"
+						},
 						inputClass: inputClass
 					});
 				return hammer.on("hammer.input", $.proxy(function(e) {
@@ -4783,7 +4792,7 @@ eg.module("infiniteGrid", ["jQuery", eg, window, document, "Outlayer"], function
 			var excess = columnWidth - containerWidth % columnWidth;
 
 			// if overshoot is less than a pixel, round up, otherwise floor it
-			cols = Math.max(Math[ excess && excess < 1 ? "round" : "floor" ](cols), 1);
+			cols = Math.max(Math[ excess && excess <= 1 ? "round" : "floor" ](cols), 1);
 
 			// reset column Y
 			this._appendCols = [];
@@ -4975,7 +4984,7 @@ eg.module("infiniteGrid", ["jQuery", eg, window, document, "Outlayer"], function
 			}
 			var scrollTop = this._getScrollTop();
 			var prevScrollTop = this._prevScrollTop;
-			this._prevScrollTop = scrollTop;
+
 			if (this._isIos && scrollTop === 0 || prevScrollTop === scrollTop) {
 				return;
 			}
@@ -5029,6 +5038,7 @@ eg.module("infiniteGrid", ["jQuery", eg, window, document, "Outlayer"], function
 					}
 				}
 			}
+			this._prevScrollTop = scrollTop;
 		},
 		_onResize: function() {
 			if (this.resizeTimeout) {
@@ -5248,13 +5258,6 @@ eg.module("infiniteGrid", ["jQuery", eg, window, document, "Outlayer"], function
 		_onlayoutComplete: function(e) {
 			var distance = 0;
 			var isAppend = this._isAppendType;
-			if (isAppend === false) {
-				this._isFitted = false;
-				this._fit(true);
-				distance = e.length >= this.core.items.length ?
-					0 : this.core.items[e.length].position.y;
-				distance > 0 && this.$view.scrollTop(this._getScrollTop() + e.distance);
-			}
 			var item;
 			var i = 0;
 			while (item = e[i++]) {
@@ -5264,12 +5267,23 @@ eg.module("infiniteGrid", ["jQuery", eg, window, document, "Outlayer"], function
 				}
 			}
 
-			// reset flags
-			this._reset(true);
-
 			// refresh element
 			this._topElement = this.getTopElement();
 			this._bottomElement = this.getBottomElement();
+
+			if (isAppend === false) {
+				this._isFitted = false;
+				this._fit(true);
+				distance = e.length >= this.core.items.length ?
+					0 : this.core.items[e.length].position.y;
+				if (distance > 0) {
+					this._prevScrollTop = this._getScrollTop() + distance;
+					this.$view.scrollTop(this._prevScrollTop);
+				}
+			}
+
+			// reset flags
+			this._reset(true);
 
 			/**
 			 * Occurs when layout is completed (after append / after prepend / after layout)

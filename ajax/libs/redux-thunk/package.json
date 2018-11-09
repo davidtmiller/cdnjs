@@ -1,6 +1,6 @@
 {
   "name": "redux-thunk",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Thunk middleware for Redux.",
   "filename": "redux-thunk.min.js",
   "repository": {

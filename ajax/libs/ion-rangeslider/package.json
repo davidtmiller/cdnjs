@@ -1,7 +1,7 @@
 {
   "name": "ion-rangeslider",
   "filename": "js/ion.rangeSlider.min.js",
-  "version": "2.1.2",
+  "version": "2.1.4",
   "homepage": "https://github.com/IonDen/ion.rangeSlider",
   "description": "Cool, comfortable and easily customizable range slider with many options and skin support",
   "keywords": [
@@ -30,14 +30,6 @@
       "img/sprite-skin*.png"
     ]
   },
-  "requiredFiles": [
-    "css/ion.rangeSlider.min.css",
-    "css/ion.rangeSlider.skinFlat.min.css",
-    "css/ion.rangeSlider.skinHTML5.min.css",
-    "css/ion.rangeSlider.skinModern.min.css",
-    "css/ion.rangeSlider.skinNice.min.css",
-    "css/ion.rangeSlider.skinSimple.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/IonDen/ion.rangeSlider"

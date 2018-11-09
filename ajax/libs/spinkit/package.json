@@ -36,18 +36,5 @@
         "spinners/9-cube-grid*.css"
       ]
     }
-  ],
-  "requiredFiles": [
-    "spinners/1-rotating-plane.min.css",
-    "spinners/10-fading-circle.min.css",
-    "spinners/11-folding-cube.min.css",
-    "spinners/2-double-bounce.min.css",
-    "spinners/3-wave.min.css",
-    "spinners/4-wandering-cubes.min.css",
-    "spinners/5-pulse.min.css",
-    "spinners/6-chasing-dots.min.css",
-    "spinners/7-three-bounce.min.css",
-    "spinners/8-circle.min.css",
-    "spinners/9-cube-grid.min.css"
   ]
 }

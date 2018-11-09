@@ -1,7 +1,7 @@
 {
   "name": "tablesort",
   "filename": "tablesort.min.js",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A dependency free sorting component for tables.",
   "homepage": "http://tristen.ca/tablesort/demo/",
   "keywords": [

@@ -5,6 +5,11 @@
   "filename": "angular-carousel.min.js",
   "homepage": "http://revolunet.github.com/angular-carousel",
   "author": "Julien Bouquillon <julien@revolunet.com>",
+  "keywords": [
+    "angularjs",
+    "carousel",
+    "mobile"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/revolunet/angular-carousel.git"

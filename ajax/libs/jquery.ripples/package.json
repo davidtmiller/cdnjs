@@ -1,0 +1,37 @@
+{
+  "name": "jquery.ripples",
+  "version": "0.4.2",
+  "filename": "jquery.ripples.min.js",
+  "description": "Add a water ripple effect to your background using WebGL.",
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "water",
+    "ripples",
+    "WebGL",
+    "background",
+    "effect"
+  ],
+  "homepage": "https://sirxemic.github.io/jquery.ripples/",
+  "license": "MIT",
+  "author": {
+    "name": "Pim Schreurs",
+    "url": "http://sirxemic.com/",
+    "email": "pimschreurs@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sirxemic/jquery.ripples.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/sirxemic/jquery.ripples.git",
+    "basePath": "",
+    "files": [
+      "jquery.ripples*"
+    ]
+  }
+}

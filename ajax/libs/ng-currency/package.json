@@ -1,7 +1,7 @@
 {
   "name": "ng-currency",
   "filename": "ng-currency.min.js",
-  "version": "0.9.3",
+  "version": "0.10.1",
   "authors": [
     "Luis Aguirre <luis@alaguirre.com>"
   ],
@@ -23,5 +23,9 @@
     "files": [
       "**/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aguirrel/ng-currency.git"
   }
 }

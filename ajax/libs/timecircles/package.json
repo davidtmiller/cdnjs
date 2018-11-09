@@ -30,9 +30,6 @@
       "TimeCircles*"
     ]
   },
-  "requiredFiles": [
-    "TimeCircles.min.css"
-  ],
   "author": {
     "name": "Wim Barelds",
     "email": "wim.barelds@gmail.com",

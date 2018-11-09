@@ -30,8 +30,5 @@
         "img/switch.png"
       ]
     }
-  ],
-  "requiredFiles": [
-    "css/multi-select.min.css"
   ]
 }

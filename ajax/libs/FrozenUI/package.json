@@ -18,5 +18,14 @@
       "**/*"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "frozenui",
+    "frozen",
+    "ui",
+    "mobile",
+    "qq",
+    "腾讯",
+    "手Q"
+  ]
 }

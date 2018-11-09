@@ -1,0 +1,32 @@
+{
+  "name": "react-relay",
+  "filename": "relay.min.js",
+  "description": "A framework for building data-driven React applications.",
+  "version": "0.9.1",
+  "keywords": [
+    "graphql",
+    "react",
+    "relay"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "https://facebook.github.io/relay/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/relay.git"
+  },
+  "author": "Facebook Inc",
+  "dependencies": {
+    "babel-runtime": "^6.6.1",
+    "fbjs": "^0.8.1",
+    "react-static-container": "^1.0.1"
+  },
+  "npmName": "react-relay",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}

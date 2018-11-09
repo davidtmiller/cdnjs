@@ -1,7 +1,7 @@
 {
   "name": "angucomplete-alt",
   "filename": "angucomplete-alt.min.js",
-  "version": "2.2.0",
+  "version": "2.4.1",
   "description": "Awesome Autocompleteness for AngularJS",
   "author": "ghiden",
   "email": "hidenari@gmail.com",
@@ -18,5 +18,10 @@
       "angucomplete-alt.min.js"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "autocomplete",
+    "typeahead",
+    "angularjs"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "algoliasearch-helper-js",
-  "version": "2.9.1",
+  "version": "2.11.0",
   "filename": "algoliasearch.helper.min.js",
   "description": "Helper for implementing advanced search features with algolia",
   "author": {
@@ -12,6 +12,15 @@
     "type": "git",
     "url": "https://github.com/algolia/algoliasearch-helper-js.git"
   },
+  "keywords": [
+    "js",
+    "algolia",
+    "search",
+    "helper",
+    "facets",
+    "api",
+    "rest"
+  ],
   "dependencies": {
     "lodash": "^3.10.1",
     "lodash-compat": "^3.10.1",

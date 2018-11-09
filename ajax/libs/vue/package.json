@@ -1,7 +1,7 @@
 {
   "name": "vue",
   "filename": "vue.min.js",
-  "version": "1.0.17",
+  "version": "1.0.26",
   "license": "MIT",
   "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
   "homepage": "http://vuejs.org",
@@ -10,14 +10,15 @@
     "browser",
     "framework"
   ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/vuejs/vue.git",
-    "basePath": "dist",
-    "files": [
-      "*.js"
-    ]
-  },
+  "npmName": "vue",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*.+(js|map)"
+      ]
+    }
+  ],
   "gratipay": "yyx990803",
   "repository": {
     "type": "git",

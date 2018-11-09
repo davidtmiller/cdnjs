@@ -25,8 +25,5 @@
     "files": [
       "bootstrap-rating*.+(js|css)"
     ]
-  },
-  "requiredFiles": [
-    "bootstrap-rating.min.css"
-  ]
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "babel-standalone",
-  "version": "6.6.5",
+  "version": "6.10.3",
   "description": "Standalone build of Babel for use in non-Node.js environments. Similar to the (now deprecacted) babel-browser",
   "filename": "babel.min.js",
   "repository": {
@@ -19,5 +19,12 @@
         "babel.min.js"
       ]
     }
+  ],
+  "keywords": [
+    "babel",
+    "babeljs",
+    "6to5",
+    "transpile",
+    "transpiler"
   ]
 }

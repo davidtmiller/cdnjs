@@ -1,11 +1,11 @@
 {
   "name": "rxjs",
-  "npmName": "rx",
+  "npmName": "@reactivex/rxjs",
   "npmFileMap": [
     {
-      "basePath": "/dist/",
+      "basePath": "/dist/global",
       "files": [
-        "*"
+        "**/*"
       ]
     }
   ],

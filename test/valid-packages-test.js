@@ -8,7 +8,7 @@ var assert = require("assert"),
     jsv = require("JSV").JSV.createEnvironment(),
     isThere = require("is-there");
 
-function parse(json_file, ignore_missing, ignore_parse_fail) {
+function parse(json_file, ignore_missing) {
     var content;
 
     try {
@@ -22,9 +22,7 @@ function parse(json_file, ignore_missing, ignore_parse_fail) {
     try {
         return JSON.parse(content);
     } catch (err2) {
-        if (!ignore_parse_fail) {
-            assert.ok(0, json_file + " failed to parse, you can validate your json here: http://jsonlint.com/");
-        }
+        assert.ok(0, json_file + " failed to parse, you can validate your json here: http://jsonlint.com/");
         return null;
     }
 }
@@ -40,8 +38,10 @@ function pretty_error(err) {
 
 // load up those files
 var packages = glob.sync("./ajax/libs/*/").map(function (pkg) {
-        return pkg + "package.json";
-    }),
+        if (!fs.lstatSync(pkg.substring(0, pkg.length - 1)).isSymbolicLink()) {
+            return pkg + "package.json";
+        }
+    }).filter(function(n){ return n != undefined }),
     schemata = glob.sync("./test/schemata/*.json").map(function (schema) {
         return jsv.createSchema(parse(schema));
     }),
@@ -59,7 +59,7 @@ packages.map(function (pkg) {
             pkg_name(pkg) + " malformed!");
     };
     package_vows[pname + " package.json is valid"] = function (pkg) {
-        var pkg_obj = parse(pkg, true, true),
+        var pkg_obj = parse(pkg, true),
             valid = false,
             errors;
         if (pkg_obj === null) {
@@ -95,7 +95,7 @@ packages.map(function (pkg) {
         }
     };
     package_vows[pname + ": filename from package.json exists"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         if (json.version === undefined) {
            return;
         }
@@ -104,27 +104,16 @@ packages.map(function (pkg) {
         assert.ok(isThere(filePath),
                   filePath +" does not exist but is referenced in package.json!");
     };
-    package_vows[pname + ": required file exist"] = function (pkg) {
-      var json = parse(pkg, true, true);
-      if (json.requiredFiles !== undefined) {
-        for (var i in json.requiredFiles) {
-          var filePath = "./ajax/libs/" + json.name + "/"+ json.version + "/" + json.requiredFiles[i];
-          assert.ok(isThere(filePath), filePath +" does not exist but is required!");
-        }
-      }
-    };
     package_vows[pname + ": name in package.json should be parent folder name"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         var dirs = pkg.split("/");
         var trueName = dirs[dirs.length - 2];
-        if (!fs.lstatSync("./ajax/libs/" + trueName).isSymbolicLink()) {
-            assert.ok(trueName == json.name,
-                pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
-        }
+        assert.ok(trueName == json.name,
+            pkg_name(pkg) + ": Name property should be '" + trueName + "', not '" + json.name +"'");
     };
 
     package_vows[pname + ": validate type of repository/repositories"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
             assert.ok(
                 (
                     (json.repositories === undefined) ||
@@ -136,7 +125,7 @@ packages.map(function (pkg) {
     };
 
      package_vows[pname + ": do not use repositories if there is only one repo"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
             assert.ok(
                 (
                     (json.repositories === undefined) ||
@@ -145,7 +134,7 @@ packages.map(function (pkg) {
             "There is only one repo in " + json.name + "'s package.json, please use repository object instead of repositories array."
             );
     };   package_vows[pname + ": make sure repository field follow npm package.json format"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
             if (json.repositories === undefined && json.repository !== undefined) {
                 json.repositories = [];
                 json.repositories[0] = json.repository;
@@ -162,7 +151,7 @@ packages.map(function (pkg) {
     };
 
     package_vows[pname + ": must have auto-update config if it has no version specified"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         if (json.version != undefined) {
           return;
         }
@@ -170,7 +159,7 @@ packages.map(function (pkg) {
                    pkg_name(pkg) + ": must have a valid auto-update config");
     }
     package_vows[pname + ": npmName and npmFileMap should be a pair"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         if (!json.npmName && !json.npmFileMap) {
           return;
         }
@@ -179,7 +168,7 @@ packages.map(function (pkg) {
     }
     var targetPrefixes = new RegExp("^git://.+\.git$");
     package_vows[pname + ": autoupdate block is valid (if present)"] = function (pkg) {
-        var json = parse(pkg, true, true),
+        var json = parse(pkg, true),
             fileMapPostfixes = new RegExp("\\*\\*$");
         if (json.autoupdate) {
             assert.ok(json.autoupdate.source == "git",
@@ -204,12 +193,12 @@ packages.map(function (pkg) {
         }
     }
     package_vows[pname + ": should not have multiple auto-update configs"] = function(pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         assert.ok(json.autoupdate === undefined || json.npmFileMap === undefined,
             pkg_name(pkg) + ": has both git and npm auto-update config, should remove one of it");
     }
     package_vows[pname + ": should point filename field to minified file"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         if (json.filename) {
             var path = "./ajax/libs/" + json.name + "/"+ json.version + "/",
                 orig = json.filename.split("."),
@@ -230,7 +219,7 @@ packages.map(function (pkg) {
         var orig = fs.readFileSync(pkg, 'utf8'),
             correct = JSON.stringify(JSON.parse(orig), null, 2) + '\n',
             content = JSON.parse(correct);
-        if (correct.version === undefined) {
+        if (content.version === undefined) {
           return;
         }
         assert.ok(orig === correct,
@@ -254,9 +243,12 @@ packages.map(function (pkg) {
     }
 
     package_vows[pname + ": useless fields check"] = function (pkg) {
-        var json = parse(pkg, true, true);
+        var json = parse(pkg, true);
         var json_fix = JSON.parse(JSON.stringify(json));
+        delete json_fix.bin;
+        delete json_fix.jshintConfig;
         delete json_fix.eslintConfig;
+        delete json_fix.requiredFiles
         delete json_fix.styles;
         delete json_fix.install;
         delete json_fix.typescript;
@@ -271,6 +263,10 @@ packages.map(function (pkg) {
         delete json_fix.contributors;
         delete json_fix.maintainers;
         delete json_fix.bugs;
+        delete json_fix.gitHEAD;
+        delete json_fix.gitHead;
+        delete json_fix.spm;
+        delete json_fix.dist;
         delete json_fix.issues;
         delete json_fix.files;
         delete json_fix.ignore;
@@ -279,7 +275,16 @@ packages.map(function (pkg) {
         delete json_fix.directories;
 
         assert.ok(JSON.stringify(json) === JSON.stringify(json_fix) ,
-            pkg_name(pkg) + ": we don't need eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
+            pkg_name(pkg) + ": we don't need bin, jshintConfig, eslintConfig, styles, install, typescript, browserify, browser, jam, jest, scripts, devDependencies, main, peerDependencies, contributors, bugs, gitHEAD, issues, files, ignore, engines, engine, directories and maintainers fields in package.json");
+    }
+    package_vows[pname + ": There must be repository information when using auto-update config"] = function(pkg) {
+        var json = parse(pkg, true);
+        assert.ok(
+            (
+                (json.repository !== undefined || json.repositories !== undefined) ||
+                (json.autoupdate === undefined && json.npmFileMap === undefined)
+            ),
+            pkg_name(pkg) + ": Need to add repository information in package.json");
     }
     context[pname] = package_vows;
     suite.addBatch(context);

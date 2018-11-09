@@ -1,0 +1,28 @@
+{
+  "name": "ng-wig",
+  "version": "3.0.1",
+  "filename": "ng-wig.min.js",
+  "author": "Stepan Suvorov",
+  "dependencies": {
+    "angular": "1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevermeister/ngWig"
+  },
+  "homepage": "https://stevermeister.github.io/ngWig/",
+  "license": "MIT",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/stevermeister/ngWig.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
+  "keywords": [
+    "angular",
+    "wysiwyg",
+    "editor"
+  ]
+}

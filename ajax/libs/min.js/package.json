@@ -16,5 +16,13 @@
     "type": "git",
     "url": "git://github.com/remy/min.js.git"
   },
-  "author": "Remy Sharp"
+  "author": "Remy Sharp",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/remy/min.js.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
 }

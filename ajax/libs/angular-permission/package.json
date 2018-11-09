@@ -1,6 +1,6 @@
 {
   "name": "angular-permission",
-  "version": "2.1.2",
+  "version": "3.2.0",
   "filename": "angular-permission.min.js",
   "description": "Simple route authorization via roles/permissions",
   "author": {

@@ -16,16 +16,13 @@
   "author": "Connor Atherton",
   "license": "MIT",
   "homepage": "https://github.com/ConnorAtherton/loaders.css",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/ConnorAtherton/loaders.css.git",
-    "basePath": "",
-    "files": [
-      "loaders*.css",
-      "loaders*.js"
-    ]
-  },
-  "requiredFiles": [
-    "loaders.css.min.js"
+  "npmName": "loaders.css",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "loaders*.+(js|css|map)"
+      ]
+    }
   ]
 }

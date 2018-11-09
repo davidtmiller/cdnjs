@@ -2,7 +2,7 @@
   "name": "angular-translate-handler-log",
   "filename": "angular-translate-handler-log.min.js",
   "description": "Uses angular's $log service to give a warning when trying to translate a translation id which doesn't exist.",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "homepage": "http://angular-translate.github.io",
   "keywords": [
     "framework",

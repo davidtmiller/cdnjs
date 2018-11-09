@@ -22,5 +22,10 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "keywords": [
+    "dropdown",
+    "overlay",
+    "tether"
+  ]
 }

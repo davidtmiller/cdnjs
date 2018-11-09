@@ -2,7 +2,7 @@
   "name": "angular-strap",
   "filename": "angular-strap.min.js",
   "description": "AngularStrap - AngularJS directives for Bootstrap",
-  "version": "2.3.7",
+  "version": "2.3.9",
   "homepage": "http://mgcrea.github.com/angular-strap",
   "keywords": [
     "angular",

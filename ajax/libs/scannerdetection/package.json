@@ -31,8 +31,5 @@
     "files": [
       "jquery.scannerdetection*.js"
     ]
-  },
-  "requiredFiles": [
-    "jquery.scannerdetection.compatibility.min.js"
-  ]
+  }
 }

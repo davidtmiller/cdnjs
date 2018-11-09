@@ -1,6 +1,6 @@
 {
   "name": "limonte-sweetalert2",
-  "version": "0.4.3",
+  "version": "4.0.8",
   "description": "SweetAlert2 A beautiful replacement for JavaScript's 'alert'",
   "filename": "sweetalert2.min.js",
   "repository": {
@@ -21,8 +21,5 @@
     "files": [
       "**/*"
     ]
-  },
-  "requiredFiles": [
-    "sweetalert2.min.css"
-  ]
+  }
 }

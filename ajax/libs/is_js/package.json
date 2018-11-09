@@ -20,5 +20,17 @@
   ],
   "authors": [
     "arasatasaygin <arasatasaygin@gmail.com>"
+  ],
+  "keywords": [
+    "type",
+    "presence",
+    "regexp",
+    "string",
+    "arithmetic",
+    "object",
+    "array",
+    "environment",
+    "time",
+    "configuration"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "shepherd",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "filename": "js/shepherd.min.js",
   "description": "Guide your users through a tour of your app.",
   "authors": [
@@ -19,5 +19,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/HubSpot/shepherd.git"
-  }
+  },
+  "keywords": [
+    "guider",
+    "tour",
+    "javascript",
+    "css"
+  ]
 }

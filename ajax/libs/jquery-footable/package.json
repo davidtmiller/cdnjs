@@ -2,7 +2,7 @@
   "name": "jquery-footable",
   "filename": "footable.min.js",
   "description": "jQuery plugin to make HTML tables responsive",
-  "version": "3.0.6",
+  "version": "3.0.10",
   "keywords": [
     "jquery",
     "footable",

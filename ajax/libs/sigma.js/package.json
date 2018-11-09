@@ -22,8 +22,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "sigma.require.min.js"
   ]
 }

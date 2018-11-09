@@ -3,9 +3,9 @@
   "npmName": "async",
   "npmFileMap": [
     {
-      "basePath": "/lib/",
+      "basePath": "dist",
       "files": [
-        "*"
+        "**/*"
       ]
     }
   ],

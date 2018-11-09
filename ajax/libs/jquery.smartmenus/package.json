@@ -21,14 +21,6 @@
       "**/*.+(css|js)"
     ]
   },
-  "requiredFiles": [
-    "addons/bootstrap/jquery.smartmenus.bootstrap.min.css",
-    "css/sm-core-css.min.css",
-    "css/sm-blue/sm-blue.min.css",
-    "css/sm-clean/sm-clean.min.css",
-    "css/sm-mint/sm-mint.min.css",
-    "css/sm-simple/sm-simple.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vadikom/smartmenus"

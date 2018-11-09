@@ -1,0 +1,32 @@
+{
+  "name": "Vidage",
+  "version": "0.1.2",
+  "filename": "scripts/Vidage.min.js",
+  "description": "Your solution to full-screen background video and image combined.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvLden/Vidage.git"
+  },
+  "homepage": "https://dvLden.github.io/Vidage/",
+  "keywords": [
+    "vidage",
+    "full-screen",
+    "video",
+    "image",
+    "background"
+  ],
+  "author": "dvL-den",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "npmName": "vidage",
+  "npmFileMap": [
+    {
+      "basePath": "dest",
+      "files": [
+        "**/*"
+      ]
+    }
+  ]
+}

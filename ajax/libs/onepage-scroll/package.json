@@ -21,9 +21,6 @@
       "onepage-scroll*.css"
     ]
   },
-  "requiredFiles": [
-    "onepage-scroll.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/peachananr/onepage-scroll"

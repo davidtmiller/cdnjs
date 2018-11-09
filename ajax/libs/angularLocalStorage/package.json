@@ -19,5 +19,9 @@
     "agrublev <agrublev@gmail.com>",
     "CamaroSS <camaro396@yandex.ru>"
   ],
-  "description": "angular local storage module"
+  "description": "angular local storage module",
+  "keywords": [
+    "angular",
+    "localStorage"
+  ]
 }

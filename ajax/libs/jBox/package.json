@@ -31,12 +31,5 @@
       "jBox*",
       "themes/*.css"
     ]
-  },
-  "requiredFiles": [
-    "jBox.min.css",
-    "themes/ModalBorder.min.css",
-    "themes/NoticeBorder.min.css",
-    "themes/TooltipBorder.min.css",
-    "themes/TooltipDark.min.css"
-  ]
+  }
 }

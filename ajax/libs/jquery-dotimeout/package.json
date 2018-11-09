@@ -21,5 +21,9 @@
     "files": [
       "jquery.ba-dotimeout*.js"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cowboy/jquery-dotimeout.git"
   }
 }

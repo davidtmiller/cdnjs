@@ -27,8 +27,5 @@
     "files": [
       "**/*"
     ]
-  },
-  "requiredFiles": [
-    "alchemy-white.min.css"
-  ]
+  }
 }

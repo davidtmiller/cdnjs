@@ -1,7 +1,7 @@
 {
   "name": "paypaljsbuttons",
-  "filename": "paypal-button-minicart.min.js",
-  "version": "1.0.2",
+  "filename": "paypal-button.min.js",
+  "version": "2.0.1",
   "description": "JavaScript integration for PayPal's buttons",
   "homepage": "http://paypal.github.io/JavaScriptButtons",
   "keywords": [
@@ -22,5 +22,13 @@
   "author": {
     "name": "Jeff Harrell",
     "url": "https://github.com/jeffharrell/"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/paypal/JavaScriptButtons.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   }
 }

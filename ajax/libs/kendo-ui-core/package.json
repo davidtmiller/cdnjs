@@ -12,5 +12,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/telerik/kendo-ui-core"
-  }
+  },
+  "license": "Apache-2.0"
 }

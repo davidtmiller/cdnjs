@@ -2,7 +2,7 @@
   "name": "bluebird",
   "description": "Full featured Promises/A+ implementation with exceptionally good performance",
   "filename": "bluebird.min.js",
-  "version": "3.3.4",
+  "version": "3.4.1",
   "keywords": [
     "promise",
     "performance",

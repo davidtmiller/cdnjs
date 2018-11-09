@@ -1,6 +1,6 @@
 {
   "name": "mindb",
-  "version": "0.1.13",
+  "version": "0.1.15",
   "description": "Database on JavaScript",
   "filename": "min.js",
   "repository": {

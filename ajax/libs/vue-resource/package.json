@@ -1,6 +1,6 @@
 {
   "name": "vue-resource",
-  "version": "0.7.0",
+  "version": "0.9.3",
   "description": "A web request service for Vue.js",
   "filename": "vue-resource.min.js",
   "repository": {
@@ -20,7 +20,7 @@
     "target": "git://github.com/vuejs/vue-resource.git",
     "basePath": "dist",
     "files": [
-      "*"
+      "**/*"
     ]
   }
 }

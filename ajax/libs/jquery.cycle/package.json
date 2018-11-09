@@ -20,8 +20,5 @@
     "files": [
       "jquery.cycle*.js"
     ]
-  },
-  "requiredFiles": [
-    "jquery.cycle.lite.min.js"
-  ]
+  }
 }

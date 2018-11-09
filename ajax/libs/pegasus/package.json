@@ -35,9 +35,5 @@
         "**/*"
       ]
     }
-  ],
-  "requiredFiles": [
-    "pegasus-commonjs.min.js",
-    "pegasus-amd.min.js"
   ]
 }

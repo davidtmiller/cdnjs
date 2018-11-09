@@ -1,8 +1,8 @@
 {
   "name": "bootstrap-material-design",
   "title": "bootstrap-material",
-  "filename": "js/material.min.js",
-  "version": "0.5.9",
+  "filename": "bootstrap-material-design.umd.min.js",
+  "version": "4.0.1",
   "description": "Material Design for Bootstrap 3",
   "repository": {
     "type": "git",

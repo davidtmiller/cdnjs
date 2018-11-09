@@ -1,0 +1,31 @@
+{
+  "name": "covjson-reader",
+  "filename": "covjson-reader.min.js",
+  "version": "0.14.0",
+  "license": "BSD-3-Clause",
+  "description": "A reader for CoverageJSON files.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reading-eScience-Centre/covjson-reader.git"
+  },
+  "keywords": [
+    "CoverageJSON",
+    "reader"
+  ],
+  "author": "Maik Riechert",
+  "dependencies": {
+    "covutils": "^0.2.0",
+    "cbor-js": "^0.1.0",
+    "ndarray": "^1.0.18",
+    "request-promise": "^1.0.2"
+  },
+  "npmName": "covjson-reader",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "covjson-reader*"
+      ]
+    }
+  ]
+}

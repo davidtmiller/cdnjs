@@ -39,10 +39,5 @@
       "css/dataTables.colVis*.css",
       "css/dataTables.colvis*.css"
     ]
-  },
-  "requiredFiles": [
-    "js/dataTables.colVis.min.js",
-    "css/dataTables.colVis.min.css",
-    "css/dataTables.colvis.jqueryui.min.css"
-  ]
+  }
 }

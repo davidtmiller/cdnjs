@@ -1,7 +1,7 @@
 {
   "name": "normalize",
   "filename": "normalize.min.css",
-  "version": "3.0.3",
+  "version": "4.2.0",
   "description": "Normalize.css as a node packaged module",
   "homepage": "http://necolas.github.com/normalize.css/",
   "keywords": [

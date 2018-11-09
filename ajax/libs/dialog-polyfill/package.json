@@ -19,9 +19,6 @@
       "dialog-polyfill*.css"
     ]
   },
-  "requiredFiles": [
-    "dialog-polyfill.min.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/GoogleChrome/dialog-polyfill"

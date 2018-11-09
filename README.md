@@ -12,9 +12,14 @@
 
 [Thomas Davis](https://twitter.com/neutralthoughts) and [Ryan Kirkman](https://twitter.com/ryan_kirkman) created cdnjs, [Drew Freyling](http://decompile.it/blog/) and [Peter Dave Hello](https://github.com/PeterDaveHello) are maintainers. [Juan Gallardo](http://jgallardo.me/) is our community moderator.
 
+Here are the project sponsors:
+
+ * [![Cloudflare](https://cdnjs.com/img/poweredbycloudflare.png)](https://cloudflare.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+ * [![Algolia](https://cdnjs.com/img/algolia256x80.png)](https://www.algolia.com/?utm_source=cdnjs&utm_medium=link&utm_campaign=cdnjs)
+
 cdnjs will host any production version of any JavaScript/CSS library, subject to license permissions.
 
-  * Libraries must have notable popularity: 100 stars/watchers on GitHub, or more then 500 times download per month on npm stats are both good examples, but as long as reasonable popularity can be demonstrated the library will be added.
+  * Libraries must have notable popularity: 100 stars/watchers on GitHub, or more than 500 times download per month on npm stats are both good examples, but as long as reasonable popularity can be demonstrated the library will be added.
   * Beta, release candidate and alpha releases are not usually considered ready for full production status. Requests for pre-release versions of libraries _may_ be declined after peer review.
   * We'll accept beta, release candidate and alpha releases if you are using our npm/git auto-update mechanism, if you really want it, please setup auto-update for that lib.
 
@@ -22,7 +27,7 @@ Please raise a new pull request for new library additions and existing library u
 
 ## IMPORTANT
 
- - All new libraries hosted on CDNJS should have a official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanishm on that lib.
+ - All new libraries hosted on CDNJS should have an official public repository or npm package, and the officially pre-built distribution file(s) should also be there, so that we can apply the auto-update mechanism on that lib.
  - Now CDNJS supports adding a library by a single package.json, you just need to add a valid CDNJS package.json with npm/git auto-update config, and remove its version field in package.json, then we'll handle the remaining works.
    - Notes that you should have a `filename` to point to the main file of a lib, if that file is not minified, please still use `filename.min.js` or `filename.min.css` structure naming, we'll do the minify job.
 

@@ -1,7 +1,7 @@
 {
   "name": "raphael",
-  "filename": "raphael-min.js",
-  "version": "2.1.4",
+  "filename": "raphael.min.js",
+  "version": "2.2.1",
   "description": "JavaScript Vector Library",
   "homepage": "http://raphaeljs.com/",
   "keywords": [
@@ -14,8 +14,7 @@
     "target": "git://github.com/DmitryBaranovskiy/raphael.git",
     "basePath": "",
     "files": [
-      "raphael-min.js",
-      "raphael.js"
+      "raphael*.+(js|map)"
     ]
   },
   "repository": {

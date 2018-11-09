@@ -1,7 +1,7 @@
 {
   "name": "vault.js",
   "filename": "vault.min.js",
-  "version": "0.1.13",
+  "version": "1.0.0",
   "description": "Key-Value Storage of true data types for the browser and node",
   "homepage": "http://jimmybyrum.github.io/vault.js/",
   "author": "Jimmy Byrum (https://github.com/jimmybyrum)",

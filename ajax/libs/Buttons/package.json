@@ -22,9 +22,6 @@
       "css/buttons*.css"
     ]
   },
-  "requiredFiles": [
-    "js/buttons.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/alexwolfe/Buttons"

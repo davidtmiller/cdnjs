@@ -4,7 +4,7 @@
   "author": {
     "name": "Jared Reich"
   },
-  "version": "2.1.0",
+  "version": "3.2.0",
   "filename": "notie.min.js",
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   "npmName": "notie",
   "npmFileMap": [
     {
-      "basePath": "",
+      "basePath": "dist",
       "files": [
-        "notie*.js"
+        "**/*"
       ]
     }
   ]

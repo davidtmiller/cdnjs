@@ -2,7 +2,7 @@
   "name": "angular-summernote",
   "filename": "angular-summernote.min.js",
   "description": "AngularJS directive to Summernote",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "license": "MIT",
   "keywords": [
     "angular.js",

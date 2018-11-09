@@ -28,9 +28,5 @@
       "jquery.treetable*.js",
       "css/jquery.treetable*.css"
     ]
-  },
-  "requiredFiles": [
-    "css/jquery.treetable.min.css",
-    "css/jquery.treetable.theme.default.min.css"
-  ]
+  }
 }

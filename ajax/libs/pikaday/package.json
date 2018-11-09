@@ -25,8 +25,5 @@
       "pikaday*.js",
       "css/pikaday*.css"
     ]
-  },
-  "requiredFiles": [
-    "css/pikaday.min.css"
-  ]
+  }
 }

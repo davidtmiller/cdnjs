@@ -1,0 +1,30 @@
+{
+  "name": "vuejs-paginator",
+  "filename": "vuejs-paginator.min.js",
+  "version": "1.0.14",
+  "description": "A Vue.js plugin to easily integrate pagination.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hootlex/vuejs-paginator"
+  },
+  "keywords": [
+    "pagination",
+    "vuejs-pagination",
+    "vuejs-laravel",
+    "laravel-pagination"
+  ],
+  "author": "Alex Kyriakidis <alex@tmvuejs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^1.0.8",
+    "vue-resource": "^0.7.2"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/hootlex/vuejs-paginator.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
+}

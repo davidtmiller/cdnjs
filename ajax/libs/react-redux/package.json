@@ -2,7 +2,7 @@
   "name": "react-redux",
   "filename": "react-redux.min.js",
   "description": "Official React bindings for Redux",
-  "version": "4.4.1",
+  "version": "4.4.5",
   "homepage": "https://github.com/rackt/react-redux",
   "author": "Dan Abramov <dan.abramov@me.com> (https://github.com/gaearon)",
   "keywords": [

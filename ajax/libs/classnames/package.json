@@ -1,7 +1,7 @@
 {
   "name": "classnames",
   "filename": "index.min.js",
-  "version": "2.2.3",
+  "version": "2.2.5",
   "homepage": "http://jedwatson.github.io/classnames/",
   "description": "A simple utility for conditionally joining classNames together",
   "keywords": [
@@ -23,10 +23,6 @@
       "dedupe*.js"
     ]
   },
-  "requiredFiles": [
-    "index.min.js",
-    "dedupe.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/JedWatson/classnames"

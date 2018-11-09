@@ -1,0 +1,37 @@
+{
+  "name": "timekit-js-sdk",
+  "version": "1.5.0",
+  "filename": "timekit-sdk.min.js",
+  "description": "JavaScript SDK for the Timekit API (timekit.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timekit-io/js-sdk.git"
+  },
+  "keywords": [
+    "Timekit",
+    "timekit.io",
+    "calendars",
+    "calendar",
+    "scheduling",
+    "schedule",
+    "book",
+    "booking",
+    "appointment",
+    "appointments"
+  ],
+  "author": "Timekit Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.5.4",
+    "base-64": "^0.1.0",
+    "humps": "^0.7.0"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/timekit-io/js-sdk.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  }
+}

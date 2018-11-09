@@ -24,8 +24,5 @@
     "files": [
       "@(js|css|fonts)/*lightcase*"
     ]
-  },
-  "requiredFiles": [
-    "css/lightcase.min.css"
-  ]
+  }
 }

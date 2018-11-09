@@ -11,6 +11,21 @@ temp/
 node_modules/
 
 # folders need to be ingored due to auto auto-update mechanism
+ajax/libs/aui/*do-not-use/
+ajax/libs/knockout-sortable/.0.14.0/
+ajax/libs/jarallax/1.6.1_/
+ajax/libs/bonzo/1.3.2-clone/
+ajax/libs/juicer/0.5.*-stable
+ajax/libs/juicer/0.6.*-stable*
+ajax/libs/jsmediatags/delete/
+ajax/libs/jsmediatags/.3.2.0/
+ajax/libs/ionic-framework/2.0.0-alpha.2.0.0-alpha.50/
+ajax/libs/unibox/jquery_plugin/
+ajax/libs/guards/bootstrap-*/
+ajax/libs/guards/foundation-*/
+ajax/libs/roslibjs/node*
+ajax/libs/formstone/remove/
+ajax/libs/angular-chart.js/rm/
 ajax/libs/foundation/undefined/
 ajax/libs/messenger/.1.5.0/
 ajax/libs/wavesurfer.js/marky-boy_2006-01-11/
@@ -57,7 +72,6 @@ ajax/libs/flocks.js/0.15.7/
 ajax/libs/qoopido.js/support
 ajax/libs/qoopido.js/widget-adapt
 ajax/libs/strophe.js/release-1.2.0
-ajax/libs/vue/*-csp*
 ajax/libs/raphael/semver/
 ajax/libs/clappr/media_control_youtube/
 ajax/libs/URI.js/.1*
@@ -124,6 +138,8 @@ ajax/libs/ng-pdfviewer/r0.1.0/
 ajax/libs/ng-pdfviewer/r0.2.0/
 ajax/libs/ng-pdfviewer/r0.2.1/
 ajax/libs/prettyCheckable/.2.1.1/
+ajax/libs/Hyphenator/HyphenatorBeta12/
+ajax/libs/Hyphenator/ersion_*
 
 #ignore files that we don't need
 ajax/libs/*/*/**/Gruntfile.js
@@ -161,3 +177,4 @@ ajax/libs/*/*/**/*.sublime-*
 ajax/libs/*/*/**/*.md
 ajax/libs/*/*/**/*.markdown
 ajax/libs/*/*/**/*.json
+ajax/libs/*/*/**/*.ts

@@ -36,5 +36,9 @@
     "files": [
       "jquery-jvectormap*.+(css|js)"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bjornd/jvectormap.git"
   }
 }

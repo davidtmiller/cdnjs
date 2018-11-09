@@ -29,8 +29,5 @@
       "css/prettyPhoto*.css",
       "images/prettyPhoto/**/*.+(png|gif)"
     ]
-  },
-  "requiredFiles": [
-    "css/prettyPhoto.min.css"
-  ]
+  }
 }

@@ -1,0 +1,33 @@
+{
+  "name": "socket.io-stream",
+  "filename": "socket.io-stream.min.js",
+  "version": "0.9.0",
+  "description": "stream for socket.io",
+  "author": "Naoyuki Kanezawa <naoyuki.kanezawa@gmail.com>",
+  "keywords": [
+    "stream",
+    "socket.io",
+    "binary",
+    "file",
+    "upload",
+    "download"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nkzawa/socket.io-stream.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "component-bind": "~1.0.0",
+    "debug": "~2.2.0"
+  },
+  "npmName": "socket.io-stream",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "socket.io-stream*"
+      ]
+    }
+  ]
+}

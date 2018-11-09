@@ -1,0 +1,33 @@
+{
+  "name": "monkberry",
+  "version": "4.0.6",
+  "filename": "monkberry.min.js",
+  "description": "Monkberry is a JavaScript library for building web user interfaces",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkberry/monkberry.git"
+  },
+  "keywords": [
+    "dom",
+    "template",
+    "view",
+    "ui"
+  ],
+  "author": "Anton Medvedev <anton@medv.io>",
+  "license": "MIT",
+  "homepage": "http://monkberry.js.org",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "source-map": "^0.5.6",
+    "asciitree": "^1.0.2"
+  },
+  "npmName": "monkberry",
+  "npmFileMap": [
+    {
+      "basePath": "",
+      "files": [
+        "monkberry*"
+      ]
+    }
+  ]
+}

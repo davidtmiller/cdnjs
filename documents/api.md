@@ -38,7 +38,10 @@ version
 description
 homepage
 keywords
-maintainers
+license
+repository
+autoupdate
+author
 assets
 ```
 

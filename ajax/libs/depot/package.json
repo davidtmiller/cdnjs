@@ -21,5 +21,6 @@
   "author": {
     "name": "Michal Kuklis",
     "email": "michal.kuklis@gmail.com"
-  }
+  },
+  "license": "MIT"
 }

@@ -16,10 +16,6 @@
       "**/*"
     ]
   },
-  "requiredFiles": [
-    "sweetalert.min.css",
-    "sweetalert-dev.min.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/t4t5/sweetalert.git"
