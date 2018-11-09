@@ -29,5 +29,6 @@
     "files": [
       "ModelCore.js"
     ]
-  }
+  },
+  "license": "MIT"
 }
